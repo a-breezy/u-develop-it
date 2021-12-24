@@ -45,7 +45,7 @@ router.get("/candidates/:id", (req, res) => {
 });
 
 // create a candidate
-arouter.post("/candidate", ({ body }, res) => {
+router.post("/candidate", ({ body }, res) => {
 	const errors = inputCheck(
 		body,
 		"first_name",
